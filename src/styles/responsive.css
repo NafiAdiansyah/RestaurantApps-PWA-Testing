@@ -1,0 +1,188 @@
+@media screen and (max-width: 768px) {
+    .skip-link {
+        font-size: 0.9rem;
+   }
+    header nav ul li a {
+        font-size: 1.1rem;
+        padding: 0.7rem 1.2rem;
+   }
+    main .container h2 {
+        font-size: 2.1rem;
+   }
+    main .container .restaurant .container-restaurant h1 {
+        font-size: 2.3rem;
+   }
+}
+@media screen and (max-width: 576px) {
+    .skip-link {
+        font-size: 0.8rem;
+   }
+    header nav {
+        height: 70px;
+   }
+    header nav .nav-icon {
+        margin: 0;
+   }
+    header nav .nav-icon .logo {
+        width: 50px;
+        height: 50px;
+   }
+    header nav .nav-icon img {
+        transition: all 0.3s;
+   }
+    header nav .nav-icon p {
+        display: none;
+   }
+   .hero {
+    background-image: url('../public/images/hero-image-small.jpg');
+  }
+   #drawer ul {
+    list-style-type: none; /* Hilangkan bullets */
+    padding: 0; /* Hapus padding */
+    margin: 0; /* Hapus margin */
+    display: none; /* Sembunyikan daftar menu secara default */
+}
+   #drawer ul.open {
+    display: flex; /* Tampilkan daftar menu */
+    flex-direction: column; /* Atur tata letak ke column */
+    align-items: center; /* Pusatkan item secara horizontal */
+    justify-content: space-evenly; /* Pusatkan secara vertikal */
+    position: absolute; /* Tetapkan posisi ke absolute */
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 300px;
+    background-color: #43766C;
+    transition: 0.3s;
+    margin-top: 4rem;
+    gap: 10px;
+    transform: translateY(0); /* Bawa daftar menu ke posisi yang sesuai */
+}
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+   }
+    header nav ul .open li a {
+        font-size: 1rem;
+        min-height: 44px;
+        min-width: 44px;
+   }
+    .menu-toggle {
+        display: flex;
+        background-color: transparent;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-weight: 500;
+        font-size:1.5rem;
+        padding: 10px;
+        cursor: pointer;
+        min-height: 44px;
+        min-width: 44px;
+        border-radius: 7px;
+   }
+   .menu-toggle:hover{
+    background-color: azure;
+    color: black;
+   }
+    main .container h2 {
+        font-size: 1.9rem;
+   }
+    main .container .restaurant .container-restaurant h1 {
+        font-size: 2.1rem;
+   }
+    main .container .restaurant .container-restaurant .restaurant__info h3 {
+        font-size: 1.3rem;
+   }
+    main .container .restaurant .container-restaurant .restaurant__info p {
+        font-size: 1rem;
+   }
+    main .container .restaurant .container-restaurant .restaurant__info .menus .foods h4, main .container .restaurant .container-restaurant .restaurant__info .menus .drinks h4 {
+        font-size: 1rem;
+   }
+    main .container .restaurant .container-restaurant .restaurant__info .menus .foods ul li, main .container .restaurant .container-restaurant .restaurant__info .menus .drinks ul li {
+        font-size: 0.9rem;
+   }
+    main .container .restaurant .container-customer-reviews .restaurant__customer-reviews .cards .card__customer-review h3 {
+        font-size: 1rem;
+   }
+    main .container .restaurant .container-customer-reviews .restaurant__customer-reviews .cards .card__customer-review p {
+        font-size: 0.9rem;
+   }
+    main .container article.comment-card .comment-card-container .comment-name {
+        font-size: 1.2rem;
+   }
+    main .container article.comment-card .comment-card-container .comment-body {
+        font-size: 0.8rem;
+   }
+    main .container article.comment-card .comment-card-container small {
+        font-size: 0.6rem;
+   }
+    main .container .floating-form .input-form .form-group label {
+        font-size: 1.1rem;
+   }
+    main .container .floating-form .input-form .form-group .name {
+        font-size: 0.9rem;
+   }
+    main .container .floating-form .input-form .form-group .body {
+        font-size: 0.9rem;
+   }
+    footer {
+        padding: 20px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-align: center;
+   }
+}
+@media screen and (max-width: 384px) {
+    .skip-link {
+        font-size: 0.7rem;
+    }
+    main .container h2 {
+        font-size: 1.4rem;
+   }
+    main .container .restaurant .container-restaurant h1 {
+        font-size: 1.7rem;
+   }
+    main .container .restaurant .container-restaurant .restaurant__info h3 {
+        font-size: 1.1rem;
+   }
+    main .container .restaurant .container-restaurant .restaurant__info p {
+        font-size: 0.8rem;
+   }
+    main .container .restaurant .container-restaurant .restaurant__info .menus .foods h4, main .container .restaurant .container-restaurant .restaurant__info .menus .drinks h4 {
+        font-size: 0.9rem;
+   }
+    main .container .restaurant .container-restaurant .restaurant__info .menus .foods ul li, main .container .restaurant .container-restaurant .restaurant__info .menus .drinks ul li {
+        font-size: 0.8rem;
+   }
+    main .container .restaurant .container-customer-reviews .restaurant__customer-reviews .cards .card__customer-review h3 {
+        font-size: 0.9rem;
+   }
+    main .container .restaurant .container-customer-reviews .restaurant__customer-reviews .cards .card__customer-review p {
+        font-size: 0.8rem;
+   }
+    main .container article.comment-card .comment-card-container .comment-name {
+        font-size: 1.1rem;
+   }
+    main .container article.comment-card .comment-card-container .comment-body {
+        font-size: 0.7rem;
+   }
+    main .container article.comment-card .comment-card-container small {
+        font-size: 0.5rem;
+   }
+    main .container .floating-form .input-form {
+        padding: 1.5rem;
+   }
+    main .container .floating-form .input-form .form-group label {
+        font-size: 0.9rem;
+   }
+    main .container .floating-form .input-form .form-group .name {
+        font-size: 0.7rem;
+   }
+    main .container .floating-form .input-form .form-group .body {
+        font-size: 0.7rem;
+   }
+}

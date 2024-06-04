@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Quicksand',sans-serif;
+}
+body,html{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  font-size: 12px;
+  color: black;
+  background-color: #EC8F5E;
+}
+
+.skip-link {
+	position: absolute;
+  border-radius: 5px;
+	top: -100px;
+	left: 10px;
+	background-color: #F7EEDD;
+	color: black;
+	padding: 10px;
+	font-size: 20px;
+	z-index: 100;
+	text-decoration: none
+}
+.skip-link:focus {
+	top: 100px
+}
+
+header nav {
+  background-color: #43766C;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+header nav ul.slide {
+  transform: translateY(0);
+  opacity: 1;
+  background-color: #43766C;
+}
+header nav .nav-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+header nav .nav-icon .logo {
+  width: 50px;
+  height: 50px;
+  object-fit:cover;
+  border-radius: 50%;
+}
+header nav .nav-icon p {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fbfbfb;
+  padding: 1rem 2rem;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: 0.15s all ease-in-out;
+  -webkit-transition: 0.15s all ease-in-out;
+  -moz-transition: 0.15s all ease-in-out;
+  -ms-transition: 0.15s all ease-in-out;
+  -o-transition: 0.15s all ease-in-out;
+}
+header nav ul li a:hover {
+  background-color: #fbfbfb;
+  color: #000;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+/*Hero Content*/
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 370px;
+  background-image: url('../public/images/hero-image-large.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+
+.herocontent{
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #938e8e88;
+  border-radius: 20px 20px 0 0;
+}
+
+.herotitle{
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 36px;
+  text-shadow: 3px 3px black;
+}
+
+.herosubtitle{
+  color: aliceblue;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 2px 2px black;
+}
+
+main{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content{
+  padding: 13px;
+}
+
+/*List Restorant*/
+.container{
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.container .title-section{
+  font-weight: 800;
+  font-size: 3em;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-decoration: underline #43766C;
+}
+
+/*Detail Restoran*/
+
+.restaurant{
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  margin: auto;
+  padding: 4rem 1.5rem;
+  box-shadow: 0 0 5px black;
+  background-color: #ECE3CE;
+  border-radius: 3px;
+}
+
+.container-restaurant{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.container-restaurant .restaurant__poster{
+  border-radius: 5px;
+}
+
+.container-restaurant h1{
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  align-self: center;
+  text-decoration: underline #43766C;
+}
+
+.container-restaurant .restaurant__info h2{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  text-decoration: underline #43766C;
+  font-size: 2rem;
+}
+
+.container-restaurant .restaurant__info h3{
+  color:black;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.container-restaurant .restaurant__info p{
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: black;
+  text-align: center;
+}
+
+.container-restaurant .restaurant__info .menus{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 10px;
+  padding: 2rem 1rem;
+}
+
+.container-restaurant .restaurant__info .menus .foods,.drinks{
+  padding-inline: 10px;
+}
+
+.container-restaurant .restaurant__info .menus .foods h4,.drinks h4{
+  margin-block: 15px;
+  font-size: 1.1rem;
+}
+
+.container-restaurant .restaurant__info .menus .foods ul,.drinks ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(235px,1fr));
+  gap: 15px;
+}
+
+.container-restaurant .restaurant__info .menus .foods ul li,.drinks ul li{
+  list-style-type: square;
+  padding: 16px 20px;
+  border-radius: 6px;
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 0 5px black;
+  background-color: #f1ede5;
+}
+
+.container-customer-reviews{
+  width: 100%;
+}
+
+.container-customer-reviews h2{
+  text-align: center;
+  text-decoration: underline #43766C;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.container-customer-reviews .restaurant__customer-reviews .cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 15px;
+}
+
+.container-customer-reviews .restaurant__customer-reviews .cards .card__customer-review{
+  background-color: #f1ede5;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 0 5px black;
+}
+
+.container-customer-reviews .restaurant__customer-reviews .cards .card__customer-review h3{
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.container-customer-reviews .restaurant__customer-reviews .cards .card__customer-review p{
+  color: #000;
+  font-size: 1rem;
+}
+
+.container-input-review{
+  width: 100%;
+}
+
+main .container .floating-form {
+  margin-block-start: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+main .container .floating-form h2{
+  text-align: center;
+  text-decoration: underline #43766C;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+main .container .floating-form .input-form {
+  background-color: #f1ede5;
+  padding: 2rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: #000 0 1px 2px 0, #000 0 1px 3px 1px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 20px;
+}
+main .container .floating-form .input-form .form-group label {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+main .container .floating-form .input-form .form-group .name {
+  min-height: 44px;
+  min-width: 44px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1rem;
+  border: none;
+  box-shadow: #000 0 4px 8px -2px, #000 0 0 0 1px;
+  padding: 5px;
+}
+main .container .floating-form .input-form .form-group .body {
+  padding: 5px;
+  width: 100%;
+  height: 180px;
+  margin-top: 7px;
+  font-size: 1rem;
+  border: none;
+  box-shadow: #000 0 4px 8px -2px, #000 0 0 0 1px;
+}
+main .container .floating-form .input-form button {
+  cursor: pointer;
+  padding-block: 8px;
+  border: none;
+  font-weight: 700;
+  background-color: #43766C;
+  color: #fbfbfb;
+  border-radius: 4px;
+  transition: 0.15s all ease-in-out;
+  -webkit-transition: 0.15s all ease-in-out;
+  -moz-transition: 0.15s all ease-in-out;
+  -ms-transition: 0.15s all ease-in-out;
+  -o-transition: 0.15s all ease-in-out;
+  border: 2px solid #fbfbfb;
+  min-width: 44px;
+  min-height: 44px;
+}
+main .container .floating-form .input-form button:hover {
+  border: 2px solid #43766C;
+  background-color: #fbfbfb;
+  color: #43766C;
+}
+/* Like */
+
+.like {
+	width: 55px;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #db0000;
+	
+	position: fixed;
+	bottom: 5%;
+	right: 16px;
+	border-radius: 50%;
+  border-style: solid;
+	border-color:#fff;
+	
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+  }
+
+.footer {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  height: 7%;
+  background-color: #43766C; 
+  bottom: 0;
+}
+
+.footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.social {
+  text-decoration: none; 
+  color: rgb(0, 251, 255); 
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.content__heading{
+  text-decoration: underline #43766C
+}
